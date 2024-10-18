@@ -1,0 +1,16 @@
+# app/services/__init__.py
+from app.services.diver_profile_service import DiverProfileService
+from app.services.diver_license_service import DiverLicenseService
+from app.services.diver_gear_service import DiverGearService
+from app.services.master_license_service import MasterLicenseService
+from app.services.master_dive_preference_service import MasterDivePreferenceService
+from .master_dive_site_service import MasterDiveSiteService
+from app.services.master_gear_service import MasterGearService
+from app.services.master_brand_service import MasterBrandService
+from app.services.master_gear_brand_service import MasterGearBrandService
+from app.services.master_color_service import MasterColorService
+from .master_marine_life_service import MasterMarineLifeService
+from app.services.dive_preference_service import DivePreferenceService
+from .master_dive_type_service import MasterDiveTypeService
+from .dive_log_service import DiveLogService
+from .diver_additional_data_service import DiverAdditionalDataService
