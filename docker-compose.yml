@@ -50,8 +50,8 @@ services:
       - "8002:8002"
     volumes:
       - ./nginx:/etc/nginx/conf.d
-      - ./ssl:/etc/ssl/certs
-      - ./ssl:/etc/ssl/private
+      - ./certs:/etc/ssl/certs
+      - ./certs:/etc/ssl/private
     networks:
       - app-network
 
