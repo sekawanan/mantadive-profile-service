@@ -43,7 +43,7 @@ services:
 
   nginx:
     image: nginx:latest
-    container_name: nginx_proxy
+    container_name: nginx_proxy_2
     depends_on:
       - app
     ports:
