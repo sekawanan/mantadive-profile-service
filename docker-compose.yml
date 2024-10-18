@@ -47,7 +47,7 @@ services:
     depends_on:
       - app
     ports:
-      - "8002:80012"
+      - "8002:8002"
     volumes:
       - ./nginx:/etc/nginx/conf.d
       - ./ssl:/etc/ssl/certs
