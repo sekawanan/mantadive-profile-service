@@ -41,6 +41,21 @@ services:
     env_file:
       - .env
 
+  nginx:
+    image: nginx:latest
+    container_name: nginx_proxy
+    depends_on:
+      - app
+    ports:
+      - "443:443"
+      - "8003:8003"
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+      - ./ssl:/etc/ssl/certs
+      - ./ssl:/etc/ssl/private
+    networks:
+      - app-network
+
 networks:
   app-network:
     driver: bridge
