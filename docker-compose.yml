@@ -47,7 +47,6 @@ services:
     depends_on:
       - app
     ports:
-      - "443:443"
       - "8003:8003"
     volumes:
       - ./nginx:/etc/nginx/conf.d
