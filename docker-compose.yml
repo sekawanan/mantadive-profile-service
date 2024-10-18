@@ -37,7 +37,7 @@ services:
     networks:
       - app-network
     volumes:
-      - ./src:/code
+      - ./:/code
     env_file:
       - .env
 
